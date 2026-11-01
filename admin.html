@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel Administrativo | Colabs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">PAINEL<span>.</span></a>
+      <button id="logout-btn" class="btn btn-secondary" style="padding: 6px 16px; font-size: 0.9rem;">Sair</button>
+    </div>
+  </header>
+
+  <main class="section-padding" style="margin-top: 80px;">
+    <div class="container" style="max-width: 700px;">
+      <div class="section-header" style="margin-bottom: 40px;">
+        <h2>Adicionar Novo Colab</h2>
+        <p>Preencha os dados abaixo para publicar um novo projeto no site.</p>
+      </div>
+
+      <form id="colab-form" class="contato-form">
+        <div class="form-group">
+          <label style="color: var(--text-muted); font-size: 0.85rem; display: block; margin-bottom: 6px;">Categoria / Tag</label>
+          <input type="text" id="colab-tag" placeholder="Ex: Review / Trend" required />
+        </div>
+        <div class="form-group">
+          <label style="color: var(--text-muted); font-size: 0.85rem; display: block; margin-bottom: 6px;">Título (Marca • Campanha)</label>
+          <input type="text" id="colab-title" placeholder="Ex: Bauducco • Choco Biscuit" required />
+        </div>
+        <div class="form-group">
+          <label style="color: var(--text-muted); font-size: 0.85rem; display: block; margin-bottom: 6px;">Descrição</label>
+          <textarea id="colab-desc" rows="3" placeholder="Breve resumo da campanha..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label style="color: var(--text-muted); font-size: 0.85rem; display: block; margin-bottom: 6px;">Visualizações (Views)</label>
+          <input type="text" id="colab-views" placeholder="Ex: 12.9M views" required />
+        </div>
+        <div class="form-group">
+          <label style="color: var(--text-muted); font-size: 0.85rem; display: block; margin-bottom: 6px;">Curtidas (Likes)</label>
+          <input type="text" id="colab-likes" placeholder="Ex: 55K likes" required />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Publicar Colab</button>
+      </form>
+    </div>
+
+<div style="margin-top: 50px;">
+  <h3 style="margin-bottom: 20px; color: #fff;">Colabs Cadastrados</h3>
+  <div id="admin-colabs-list"></div>
+</div>
+
+
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
