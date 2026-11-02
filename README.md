@@ -39,6 +39,7 @@ Este projeto foi construído utilizando tecnologias web modernas, sem dependênc
 ├── style.css        # Folha de estilos global e responsiva
 ├── script.js        # Lógica principal da home e carregamento dinâmico
 ├── login.html       # Tela de acesso restrito ao painel
+├── admin-login.js   # Gerenciamento do login e acesso restrito ao administrador com a senha
 ├── admin.html       # Painel administrativo para gestão de colabs
 
 
